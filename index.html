@@ -1,0 +1,186 @@
+<html>
+
+        <head>
+        <title>Web-It Jaipuria</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css"  />
+        <script src="js/jquery.js" type="text/javascript"></script>
+        </head>
+
+        <body id="home" bgcolor="#000000">
+
+		<script>
+		$(function() {
+	    $('a[href*=#]:not([href=#])').click(function() {
+	    var target = $(this.hash);
+	      if (target.length) {
+	      $('html,body').animate({scrollTop: target.offset().top}, 1000);
+	      return false;
+	      }});});
+
+	    function animateMe(temp) {
+        var h=0;
+		if(temp>2)document.getElementById(temp-2).style.backgroundColor = "#222";
+		if(temp<7){
+		if(document.getElementById(temp).style.right==0+"px")h=-300;
+		document.getElementById(temp).style.backgroundColor = "#fff";
+		document.getElementById(temp).style.right = h + "px";
+		}
+	    if( temp < 8 )
+		window.setTimeout("animateMe("+(temp+1)+")",50);
+	    }
+        function anim(temp) {
+        var h=0;
+		if(document.getElementById(temp).style.right==0+"px")h=-300;
+		document.getElementById(temp).style.right = h + "px";
+     }
+
+	    function anim2(temp) {
+        var h=-285;
+		if(document.getElementById(temp).style.left==-285+"px")h=-300;
+		document.getElementById(temp).style.left = h + "px";
+     }
+
+	    $(function() {
+		 $(".cover a").click(function(){
+			$(".nav").css({"top":"0px"});
+			$(".menu-inner li").css({"right":"-300px"});
+			$(".menu-inner2 li").css({"left":"-300px"});
+		});
+
+		 $("#brand").click(function(){
+			$(".nav").animate({top:"93%"});
+			$(".menu-inner li").css({"right":"-325px"});
+			$(".menu-inner2 li").css({"left":"-327px"});
+
+		});
+		});
+
+		function animateMe2(temp) {
+		        var h=-295;
+				if(temp>8)document.getElementById(temp-2).style.backgroundColor = "#111";
+				if(temp<13){
+				if(document.getElementById(temp).style.left==-295+"px")h=-300;
+				document.getElementById(temp).style.backgroundColor = "#fff";
+				document.getElementById(temp).style.left = h + "px";
+				}
+			    if( temp < 14 )
+				window.setTimeout("animateMe2("+(temp+1)+")",50);
+	    }
+
+
+	   	    </script>
+           <div class="cover">
+             <div class="overlay">
+             <p><a href="#111" id="cover">GAMETHON</a></p>
+             </div>
+           </div>
+
+           <div class="nav gradient" id="nav">
+             <ul>
+               <li class="brand" onMouseOver="animateMe2(7);"><a href="#home" id="brand">Web-Tech</a></li>
+               <li class="menu" onMouseOver="animateMe(1);animateMe2(7);" onMouseOut="animateMe(1);animateMe2(7);"><p><span>&#9776; Menu</span></p></li>
+             </ul>
+           </div>
+
+       <ul class="menu-inner" id="open">
+			<li id="1" onMouseOver="anim(1);" onMouseOut="anim(1);"><a href="#111"><span class="fa"></span> Premise</a></li>
+			<li id="2" onMouseOver="anim(2);" onMouseOut="anim(2);"><a href="#22"><span class="fa"></span> Gameplay</a></li>
+			<li id="3" onMouseOver="anim(3);" onMouseOut="anim(3);"><a href="#33"><span class="fa"></span> Titles</a></li>
+			<li id="4" onMouseOver="anim(4);" onMouseOut="anim(4);"><a href="#44"><span class="fa"></span> Best-Sellers</a></li>
+			<li id="5" onMouseOver="anim(5);" onMouseOut="anim(5);"><a href="#55"><span class="fa"></span> Hacks</a></li>
+			<li id="6" onMouseOver="anim(6);" onMouseOut="anim(6);"><a href="#111"><span class="fa"></span> Next &raquo;</a></li>
+		</ul>
+        <ul class="menu-inner2" id="open2">
+			<li id="7" onMouseOver="anim2(7);" onMouseOut="anim2(7);"><a><span class="fa"></span> </a></li>
+			<li id="8" onMouseOver="anim2(8);" onMouseOut="anim2(8);"><a><span class="fa"></span> </a></li>
+			<li id="9" onMouseOver="anim2(9);" onMouseOut="anim2(9);"><a><span class="fa"></span> </a></li>
+			<li id="10" onMouseOver="anim2(10);" onMouseOut="anim2(10);"><a><span class="fa"></span></a></li>
+			<li id="11" onMouseOver="anim2(11);" onMouseOut="anim2(11);"><a><span class="fa"></span> </a></li>
+			<li id="12" onMouseOver="anim2(12);" onMouseOut="anim2(12);"><a><span class="fa"></span> </a></li>
+		</ul>
+
+
+
+       <div class="main" id="main">
+      <div class="container base1" id="111">
+          <div class="overlay"> <span><a href="#22"><img src="arrow.png"/></a></span>
+            <h1>PREMISE
+              <hr>
+            </h1>
+            <p>The Assassin's Creed games primarily revolves around the rivalry between two ancient secret societies: the Assassins and the Knights Templar, and their indirect relation to an ancient species pre-dating humanity, whose society, along with much of Earth's biosphere, was destroyed by a massive solar storm. The games' real-world chronological setting begins in the year 2012, and features Desmond Miles, a bartender who is a descendant of several lines of prominent Assassins; though raised as an Assassin, he left his nomadic family to seek out a more common lifestyle. He is initially kidnapped by the megacorporation Abstergo Industries, the modern-day face of the Knights Templar, who are aware of Desmond's ancestral lineage. Desmond is forced to use the "Animus", a device that allows him to experience his "ancestral memories".</p>
+            <p>Within the Animus, Desmond explores the memories of a number of Assassins, including Altaïr ibn-La'Ahad, an initially disgraced Assassin working to redeem himself during the Third Crusade; Ezio Auditore da Firenze, an Assassin in Italy during the late 15th and early 16th centuries of the Italian Renaissance, and Ratohnhaké:ton, otherwise known as Connor Kenway, a half-Mohawk, half-British Assassin during the American Revolution. Throughout these events, Desmond learns of allusions to the prophetic end of the world in 2012 from a former Animus test subject, Subject 16: the event turns out to be a repeat of the disaster which wiped out the ancient civilization, and he finds out that his memories hold the key to Earth surviving the second storm.</p>
+          </div>
+        </div>
+
+        <div class="container base2" id="22">
+          <div class="overlay"> <span><a href="#33"><img id="arrow" src="arrow.png"/></a></span>
+            <h1>GAMEPLAY
+              <hr>
+            </h1>
+            <p>While playing as the Assassin characters, the games are generally presented as third-person in an open world, focusing on stealth and free-running. The games use a mission structure to follow the main story, generally assigning the player to complete an assassination of public figureheads or a covert mission. Alternatively, several side missions are available, such as mapping out the expansive cities from a high perch followed by performing a "leap of faith" into a haystack below, collecting treasures hidden across the cities, exploring ruins for relics, building a brotherhood of assassins to perform other tasks, or funding the rebuilding of a city through purchasing and upgrading of shops and other features.</p>
+            <p>The games use the concept of "active" versus "passive" moves, with "active" moves, such as running, climbing the sides of buildings, or jumping between rooftops, more likely to alert the attention of nearby guards. When the guards become alerted, the player must either fight them or break their line of sight and locate a hiding place, such as a haystack or a well, and wait until the guards' alert is reduced. The combat system allows for a number of unique weapons, armor, and moves, including the use of a hidden blade set in a bracer on the Assassin's arm, and which also can be used to quietly assassinate targets.
+            </p>
+          </div>
+        </div>
+        <div class="container base3" id="33">
+          <div class="overlay"> <span><a href="#44"><img id="arrow" src="arrow.png"/></a></span>
+            <h1>TITLES
+              <hr>
+            </h1>
+            <p>&bull; Assassin's Creed: Altaïr's Chronicles</p>
+            <p>&bull; Assassin's Creed II</p>
+            <p>&bull; Assassin's Creed: Brotherhood</p>
+            <p>&bull; Assassin's Creed: Revelations</p>
+            <p>&bull; Assassin's Creed III</p>
+            <p>&bull; Assassin's Creed IV: Black Flag</p>
+          </div>
+        </div>
+        <div class="container base4" id="44">
+          <div class="overlay"> <span><a href="#55"><img id="arrow" src="arrow.png"/></a></span>
+            <h1>Best-Sellers
+              <hr>
+            </h1>
+            <p>&bull; Assassin's Creed: Brotherhood</p>
+            <p>&bull; COD: Ghosts</p>
+            <p>&bull; WatchDogs</p>
+            <p>&bull; Fifa 15</p>
+            <p>&bull; Bloodborne Alpha</p>
+          </div>
+        </div>
+        <div class="container base5" id="55">
+          <div class="overlay"> <span><a href="#111"><img src="arrowup.png" id="arrow"/></a></span>
+            <h1>HACKS
+              <hr>
+            </h1>
+            <p>&bull; Assassin's Creed: Brotherhood</p>
+            <p>&bull; COD: Ghosts</p>
+            <p>&bull; WatchDogs</p>
+            <p>&bull; Fifa 15</p>
+            <p>&bull; Bloodborne Alpha</p>
+          </div>
+        </div>
+
+       </div>
+
+         <style>
+		.base1 {
+			background-image: url(./img/bg1.jpg);
+		}
+		.base2 {
+			background-image: url(./img/bg2.jpg);
+		}
+		.base3 {
+			background-image: url(./img/bg3.jpg);
+		}
+		.base4 {
+			background-image: url(./img/bg4.jpg);
+		}
+		.base5 {
+			background-image: url(./img/bg5.jpg);
+		}
+        </style>
+        </body>
+
+
+
+</html>

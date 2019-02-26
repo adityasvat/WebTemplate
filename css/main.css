@@ -1,0 +1,258 @@
+.cover{
+	width:100%;
+	height:100%;
+	background-image:url(../img/cover.jpg);
+	background-size:cover;
+	}
+	
+.cover p{
+	position:relative;
+	top:40%;
+	left:33%;
+	font-size:90px;
+	font-weight:bold;
+	text-shadow:1px -1px 8px #fff;
+	}
+
+	
+.cover .trans{
+	width: 100%;
+    height: inherit;
+	background-color: #000;
+    opacity:.8;
+	}		
+
+.container span a img
+{
+	cursor:pointer;
+    height:30px;
+	position: relative;
+    left:50%;
+	top:660px;
+
+}
+
+body {
+    overflow:hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    color: #FFF;
+    line-height: 1.4;
+    font-family:sans-serif;
+}
+a, a:link, a:visited {
+    text-decoration: none;
+	color: #fff;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    transition: all .2s linear;
+}
+a:hover {
+    color: #CCC;
+}
+.nav{
+    text-shadow:1px -1px 8px #fff;
+	width: 100%;
+    height: 60px;
+    background: #111;
+    border-bottom: 1px solid;
+    border-bottom-color: rgba(255, 255, 255, .4);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .8);
+    font-size: 24px;
+    overflow: hidden;
+    z-index: 999;
+	position:fixed;
+	top:93%;
+	left:0;
+	-webkit-transition:all 1s ease-in-out;
+	-moz-transition:all 1s ease-in-out;
+	transition:all 1s ease-in-out;
+}
+
+.nav ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+.nav>ul>li {
+	color:#CCC;
+}
+.nav li, .nav li a {
+	display:block;
+	-webkit-transition:all .3s ease-in-out;
+	-moz-transition:all .3s ease-in-out;
+	transition:all .3s ease-in-out;
+}
+.nav li:hover {
+	color:#FFF;
+	background-color:#C03;
+}
+.nav a, .nav a:hover {
+	text-decoration:none;
+	color:inherit;
+}
+.nav .brand {
+	display:block;
+	padding:13px 26px;
+	font-size:38px;
+	font-weight:bold;
+	float:left;
+}
+.nav .brand a {
+	margin-top:-8px;
+}
+.nav>a {
+	display:block;
+	height:40px;
+	padding:12px 20px;
+}
+.nav .menu {
+	float:right;
+	cursor:pointer;
+}
+.nav .menu p {
+	display:block;
+	width:120px;
+	height:40px;
+	padding:12px;
+	border-left:solid 1px #444;
+	margin:0;
+}
+
+.menu-inner {
+	position:fixed;
+	top:61px;
+	right:0px;
+	width:325px;
+	height:100%;
+	overflow:visible;
+	z-index:999;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+.menu-inner li{
+	position:relative;
+	right:-325px;
+	width:325px;
+	background-color:#222;
+	box-shadow:0 10px 20px #000;
+	border-left:solid 1px #333;
+	display:block;
+	-webkit-transition:all .3s ease-in-out;
+	transition:all .3s ease-in-out;
+	}
+
+	
+
+.menu-inner li a {
+	display:block;
+	padding-top:25px;
+	height:60px;
+	font-size: 24px;
+	color:#FFF;
+	border-bottom:1px solid #444;
+}
+.menu-inner li a:hover {
+	background-color:#C03;
+}
+.menu-inner .fa {
+	margin-left:20px;
+	margin-right:20px;
+}
+
+.container {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+	min-height:600px;
+    text-align: left;
+    overflow:hidden;
+    z-index: 1;
+}
+.overlay {
+    width: 100%;
+    height: inherit;
+	background-color: #000;
+    opacity: .8;
+    word-break: keep-all;
+}
+.container h1 {
+    margin: 0;
+    margin-top: 10%;
+    margin-left: 30%;
+    font-size: 36px;
+}
+.container h1 hr {
+    display:block;
+    margin: 0;
+    border-top: solid 6px #FFF;
+    width: 100px;
+}
+.container p {
+    margin: 0;
+    margin-top: 12px;
+    margin-left: 30%;
+	margin-right:15%;
+    font-size: 16px;
+}
+
+
+::selection{
+	background-color:#C00;
+	
+	}
+
+.menu-inner2 {
+	position:fixed;
+	top:61px;
+	left:0px;
+	width:325px;
+	height:100%;
+	overflow:visible;
+	z-index:999;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+.menu-inner2 li{
+	position:relative;
+	left:-327px;
+	width:325px;
+	background-color:#222;
+	box-shadow:0 10px 20px #000;
+	border-right:solid 1px #333;
+	display:block;
+	-webkit-transition:all .3s ease-in-out;
+	-moz-transition:all .3s ease-in-out;
+	transition:all .3s ease-in-out;
+	}
+
+	
+
+.menu-inner2 li a {
+	display:block;
+	padding-top:25px;
+	height:60px;
+	font-size: 24px;
+	color:#FFF;
+	border-bottom:1px solid #444;
+}
+.menu-inner2 li a:hover {
+	background-color:#C03;
+}
+.menu-inner2 .fa {
+	margin-left:20px;
+	margin-right:20px;
+}
+.menu-inner2 li.active {
+	color:#FFF;
+	background-color:#0DCBC0;
+}
